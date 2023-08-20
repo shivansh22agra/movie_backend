@@ -8,8 +8,7 @@ app.use("/", movieRouter);
 app.use("/", saveMovieRouter);
 mongoose
   .connect(
-    "mongodb+srv://shivansh:Password123@cluster0.j5xjjqv.mongodb.net/?retryWrites=true&w=majority"
-  )
+"mongodb+srv://agrawalshivansh22:NJE8M6xBP3RWb2sA@cluster0.r0ftezj.mongodb.net/?retryWrites=true&w=majority"  )
   .then(() => {
     app.listen(3000, () => {
       console.log("Server is running");
