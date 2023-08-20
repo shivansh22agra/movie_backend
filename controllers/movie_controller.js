@@ -58,16 +58,14 @@ export const saveMovie = async (req, res) => {
   }
 };
 
-export const getallfilterMovies=async(req,res)=>{
-  try{
-    const page=parseInt(req.query.page)-1||0;
-    const limit=parseInt(req.query.limit)||5;
-    const search=req.query.search||"";
-    let sort=req.query.search||"rating";
-    
-
-   } catch(err){
-      console.log(err);
-    res.status(500).json({message:"error"});
+export const getallfilterMovies = async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) - 1 || 0;
+    const limit = parseInt(req.query.limit) || 5;
+    const search = req.query.search || "";
+    let sort = req.query.search || "rating";
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ message: "error" });
   }
-}
+};
